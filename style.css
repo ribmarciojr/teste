@@ -4,17 +4,25 @@
     border-collapse: collapse;
 }
 
+:root {
+    --primary-color: white;
+}
+
+.dark {
+    --primary-color: black;
+}
+
 /* ========= Cabeçalho =========  */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 87px;
-    padding-right: 87px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 5.4375rem;
+    padding-right: 5.4375rem;
+    box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -25,24 +33,57 @@ ul {
     display: flex;
 }
 
+body {
+    background-color: var(--primary-color);
+}
+
+.mode-container {
+    /* width: 300px;
+    height: 50px; */
+    background-color: #202020;
+    display: flex;
+   
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 30px;
+    height: 50px;
+    background-color: red;
+    cursor: pointer;
+    display: block;
+   
+}
+
+.mode-selector {
+    /* width: 40px;
+    height: 20px; */
+    border-radius: 5px;
+    color: black;
+    
+}
+
 .navigation {
     width: 31.25rem;
 }
 
 .brand {
     color: #202020;
-    margin-right: 50px;
+    margin-right: 3.125rem;
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .sections a { 
     color: #0065FF;
     font-family: "Be Vietnam Pro", sans-serif;
-    margin-left: 20px;
-    font-size: 16px;
+    margin-left: 1.25rem;
+    font-size: 1rem;
 }
 
 
@@ -53,9 +94,8 @@ ul {
  
 /* =========== Apresentação ========= */
 
-
 .conteudo-container-geral, .experiencias-container {
-    border: 1px solid black;
+    border: .0625rem solid black;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -63,32 +103,39 @@ ul {
 }
 
 .conteudo-container {
-    width: 962px;
+    width: 60.125rem;
     flex-wrap: wrap;
 }
 
 .introducao, .experiencies {
-    border: 1px solid red;
-    width: 962px;
-    margin: 64px;
+    border: .0625rem solid red;
+    width: 60.125rem;
+    margin: 4rem;
 }
 
 .foto-container {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 50%;
     background-color: #E5E5E5;
-    box-shadow: 0 20px 40px 0 rgb(0,0,0, 0.2);
-    margin-bottom: 64px;
+    box-shadow: 0 1.25rem 2.5rem 0 rgb(0,0,0, 0.2);
+    margin-bottom: 4rem;
 }
 
 .foto {
-    
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    box-shadow: 0 1.25rem 2.5rem 0 rgb(0,0,0, 0.2);
+    margin-bottom: 4rem;
+    object-fit: cover;
+    object-position: top;
 }
 
 .title-container {
     font-family: "EB Garamond", serif;
-    font-size: 70px;
+    font-size: 4.375rem;
     color: #0065FF;
     font-weight: bold;
 }
@@ -98,19 +145,19 @@ ul {
 }
 
 .line {
-    width: 240px;
+    width: 15rem;
     background-color: #0065FF;
-    height: 1px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: .0625rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 .second-line {
-    width: 960px;
+    width: 60rem;
     background-color: #0065FF;
-    height: 1px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: .0625rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 /* =========== Experiências ========= */
@@ -119,45 +166,45 @@ ul {
 .experiencies h2 {
     color: #0065FF;
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bolder;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .experiencies p {
     color: #202020;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-family: "Be Vietnam Pro", sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .projeto-container {
     display: flex;
     align-items: top;
     justify-content: left;
-    margin-bottom: 42px;
+    margin-bottom: 2.625rem;
 }
 
 .projeto {
     background-color: #E5E5E5;
-    width: 640px;
-    height: 370px;
+    width: 40rem;
+    height: 23.125rem;
 }
 
 .projeto-info {
-    width: 360px;
-    margin-left: 24px;
+    width: 22.5rem;
+    margin-left: 1.5rem;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .projeto-titulo {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .projeto-descricao {
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .projeto-link-container {
@@ -168,16 +215,40 @@ ul {
 }
 
 .projeto-link {
-    width: 180px;
-    height: 50px;
-    border-radius: 20px;
+    width: 11.25rem;
+    height: 3.125rem;
+    border-radius: 1.25rem;
     color: #0065FF;
-    border: 1px solid #0065FF;
+    border: .0625rem solid #0065FF;
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 29.6875rem) {
+    header {
+        padding-left: 20px;
+    }
+
+    .brand {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .sections {
+        display: none;
+    }
+    
     .facet_sidebar {
       display: none;
     }
+
+    .socials {
+      display: none;
+    }
+
+    .introducao, .experiencies {
+        border: .0625rem solid red;
+        width: 350px;
+        margin: 4rem;
+    }
+    
   }

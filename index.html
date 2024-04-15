@@ -19,9 +19,8 @@
         
 </head>
 
-<body>
+<body >
     <header>
-
         <div class="menu">
             <nav class="navigation">
                 <div class="brand">Kevin Bennett</div>
@@ -52,6 +51,12 @@
             </li>
         </ul>
 
+        <div class="mode-container">
+            <input type="checkbox" class="chk" id="chk"/>
+            <label class="mode-selector" for="chk">
+                <span class="ball"></span>
+            </label>
+        </div>
     </header>
 
 
@@ -59,7 +64,7 @@
         <div class="conteudo-container">
             <section class="introducao">
                 <div class="foto-container">
-                    <!-- <span class="foto">Foto</span> -->
+                    <img src="./linkedin_image.jpg" class="foto" />
                 </div>
                 <article class="title-container">
                     <h1 class="title">
@@ -131,6 +136,13 @@
         </div>
         </div>
         
+        <script defer>
+            const chk = document.getElementById('chk')
+            
+            chk.addEventListener("change", () => {
+                document.getElementsByTagName("body")[0].classList.toggle("dark")
+            })
+        </script>
 </body>
 
 </html>
